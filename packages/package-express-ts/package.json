@@ -1,0 +1,31 @@
+{
+  "name": "@yarn-monorepo/package-express-ts",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint src --ext .js,.cjs,.mjs,.ts",
+    "lint:fix": "eslint src --ext .js,.cjs,.mjs,.ts --fix",
+    "format": "prettier --write src"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.26.0",
+    "@types/express": "^4.17.17",
+    "@types/morgan": "^1.9.4",
+    "@types/node": "^20.4.2",
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0",
+    "globals": "^16.1.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2",
+    "typescript-eslint": "^8.32.1"
+  }
+}
